@@ -1,5 +1,5 @@
 div.header {
-	height: 150px;
+	height: 75px;
 	width: 100%;
 	color: red;
 	background-color: black;
@@ -8,6 +8,7 @@ div.header {
 
 div.toolbarbutton {
 	height:50px;
+	background-color:blue;
 	width:20%;
 	float:left;
 
