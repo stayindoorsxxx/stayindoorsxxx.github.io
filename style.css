@@ -7,8 +7,9 @@ div.header {
 }
 
 div.toolbar {
-	height:20%;
+	height:7%;
 	position:sticky;
+	top:0;
 }
 
 div.toolbarbutton {
@@ -45,6 +46,7 @@ div#button5 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  top: auto;
 }
 
 /* Place text in the middle of the image */
