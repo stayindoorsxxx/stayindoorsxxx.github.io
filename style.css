@@ -3,7 +3,10 @@ div.header {
 	width: 100%;
 	color: red;
 	background-color: black;
-	
+		
+}
+div.header>h1 {
+	text-size:10%;
 }
 
 div.toolbar {
