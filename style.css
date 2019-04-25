@@ -9,6 +9,7 @@ div.header {
 div.toolbarbutton {
 	height:50px;
 	background-color:blue;
+	color: light-blue;
 	width:20%;
 	float:left;
 
