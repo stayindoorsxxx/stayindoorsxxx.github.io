@@ -1,13 +1,18 @@
 div.header {
-	height: 15%;
+	height: 20%;
 	width: 100%;
 	color: red;
 	background-color: black;
 	
 }
 
+div.toolbar {
+	height:20%;
+	position:sticky;
+}
+
 div.toolbarbutton {
-	height:10%;
+	height:100%;
 	background-color:blue;
 	color: white;
 	width:20%;
