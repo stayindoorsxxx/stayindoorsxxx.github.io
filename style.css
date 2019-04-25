@@ -1,9 +1,26 @@
 div.header {
-	height: 50px;
+	height: 150px;
 	width: 100%;
 	color: red;
 	background-color: black;
 	
 }
 
+div.toolbarbutton {
+	height:50px;
+	width:20%;
+	float:left;
+
+}
+div#button2 {
+	offset-left:20%;
+}
+div#button3 {
+	offset-left:40%;
+}
+div#button4 {
+	offset-left:60%;
+}
+div#button5 {
+	offset-left:80%;
 }
