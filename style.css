@@ -9,33 +9,31 @@ div.header>h1 {
 	font-size:10%;
 }
 
-div.toolbar {
+table.toolbar {
+	display:block
 	height:7%;
 	position:sticky;
 	top:0;
+	width:100%;
 }
 
 div.toolbarbutton {
-	height:100%;
-	background-color:blue;
+	display:inline-block;
 	color: white;
+	width:100%;	
+	text-align:center	
+}
+table.toolbar>tbody>tr>td>a {
+	display:inline-block;
+	width:100%;
+	height:7%;	
+	background-color:blue;
+	border-color:white;
+	border-width:0;
+}
+table.toolbar>tbody>tr>td {
 	width:20%;
-	float:left;
-
 }
-div#button2 {
-	offset-left:20%;
-}
-div#button3 {
-	offset-left:40%;
-}
-div#button4 {
-	offset-left:60%;
-}
-div#button5 {
-	offset-left:80%;
-}
-
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
