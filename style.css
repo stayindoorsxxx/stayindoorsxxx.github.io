@@ -1,12 +1,12 @@
 div.header {
-	height: 20%;
+	height: 100px;
 	width: 100%;
 	color: red;
 	background-color: black;
 		
 }
 div.header>h1 {
-	font-size:10%;
+	font-size:75p;
 }
 
 table.toolbar {
@@ -59,3 +59,36 @@ table.toolbar>tbody>tr>td {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+
+
+
+/*This class is for images that sit alongside text in content windows.  Each wrap-image img should have its own id to handle size and position, but this class ensures margins and wrapping is consistent and encapsulated.*/
+/*to make an image float to the left or right, simply add the css class. This is just a convenience to speed up html dev.*/
+img.float-left {
+	float:left;
+}
+img.float-right {
+	float:right;
+}
+
+/*designate an image a fill-image to make it fit the container it's put in without stretching.*/
+img.cover-image {
+ width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+/*or give it the class fill-image to ensure it stretches as usual.*/
+img.fill-image {
+ width: inherit;
+  height: inherit;
+  object-fit: fill;
+}
+/*or contain-image to set object-fit to contain, so it will grow to fit the box, but not stretch*/
+img.contain-image {
+ width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+

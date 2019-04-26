@@ -1,10 +1,15 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+/*hero slider*/
+<link rel="stylesheet" href="pure-js-slider.css">
+<script type="text/javascript" src="slider.js"></script>
 </head>
 
 
 <div class="header" >
-	<img src="todo">
+	<img src="todo" class="contain-image" alt="logo background image">
 		<h1 class="log">Stay Indoors</h1>  
 	</img>
 </div>
@@ -51,19 +56,37 @@
 
 
 <div class="hero-image">
-  <div class="hero-text">
-    <h1>Hero Text</h1>
-    <p>Hero subtext</p>
-    <button>Left</button>
-    <button>Right</button>
+  <div class="hero-window">
+    <h1 clas="hero-header">Hero header</h1>
+    <p class="hero-content">Hero content</p>
+    <button class="hero-left">Left</button>
+    <button class="hero-right">Right</button>
   </div>
 </div>
-
+<!--
+	enclose articles and other content in a div with class content-window.  The main content should be
+	a p of class "content", and headers are class "content-header"
+--!>
 <div class="content-window">
-	<div>
 		<h1 class="content-header">Upcoming Events</h1>
-		<div class="content-text">This contains the long</div>
-		<img class="wrap-image"src="" alt="">
+		<p class="content">
+			<img id="content-pic-1" class="float-left"src="todo" alt="First content pic">
+			<img id="content-pic-2" class="float-right" src="todo" alt="Second content pic">	
+	
+			This contains the long text text and floating images which make up articles and other content
+			Position images within paragraphs of class "content" with either class "float-left" or "float-right" 
+			to automatically add images to articles. Then you just have to specify the size (height and width)
+			of the images and your article will be styled according to site standards..
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a sollicitudin augue. Nullam luctus sem rhoncus sem interdum pulvinar. In eget libero elementum, placerat elit nec, scelerisque dolor. Sed leo tellus, tincidunt nec nibh at, faucibus luctus nisi. Donec vitae lorem in lacus congue tincidunt. Phasellus fringilla libero a felis egestas, ac tristique massa egestas. Ut accumsan erat sed porta finibus. Vivamus aliquet nunc massa, eu euismod massa interdum id. Curabitur eget aliquam tortor, facilisis tincidunt nisl. Nulla luctus dignissim magna, a vestibulum eros tincidunt at.
+
+Integer posuere finibus justo vel viverra. Phasellus porta scelerisque consequat. Donec risus est, maximus eget tortor vel, fringilla tristique ante. Vestibulum viverra fermentum ante, non suscipit nisi sodales non. Suspendisse potenti. Nulla finibus massa ut volutpat mattis. Integer in tempor diam. Mauris commodo ipsum augue, et ultricies dui placerat in. Phasellus porttitor justo at est commodo, eget aliquam eros rhoncus. Etiam volutpat leo eu ultrices dignissim. Maecenas vehicula rhoncus dui, eget imperdiet nisi iaculis nec. Nunc magna lectus, euismod at lobortis ac, facilisis at felis. Pellentesque pharetra cursus est, sit amet sollicitudin erat vestibulum sagittis. Morbi cursus consequat enim et pretium. Nam tincidunt mi eget vehicula rhoncus. Ut luctus cursus lorem ac tincidunt.
+
+Quisque a erat neque. Maecenas tincidunt congue ex, non laoreet mauris placerat vitae. Praesent a volutpat ex. Duis leo mauris, malesuada vitae leo ac, iaculis facilisis lectus. Mauris non arcu tristique, condimentum augue sed, euismod lacus. Nulla quis sodales purus, vel tincidunt enim. Duis ante elit, volutpat at dolor vel, luctus molestie ipsum. Nunc id mauris sit amet nibh porta dapibus. Duis malesuada laoreet lacus sit amet lobortis. Donec ultricies lorem mi, et auctor risus fringilla nec.
+
+Mauris semper fermentum eros, sit amet dignissim neque sodales pretium. Vestibulum finibus at sem eget mattis. Cras porta, diam sed molestie auctor, risus magna lobortis velit, ut suscipit enim quam vitae tortor. Quisque mauris elit, hendrerit eu hendrerit at, fringilla ac lorem. Vestibulum vel diam tortor. Sed rhoncus varius augue, vel congue nulla. Vivamus sed interdum risus. Sed ut turpis suscipit, elementum lectus id, sollicitudin libero. Suspendisse quis suscipit justo. Sed faucibus, urna a suscipit eleifend, augue arcu elementum ex, semper dignissim mi nulla vitae sapien. Pellentesque sit amet porttitor nibh, in rutrum massa. Morbi vestibulum, elit in bibendum consectetur, eros sem porttitor erat, id egestas velit augue in nulla. Sed consequat dui quam, vel lacinia justo ullamcorper in	
+		</p>
 	</div>
 </div>
 
