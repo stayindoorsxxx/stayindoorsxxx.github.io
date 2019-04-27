@@ -1,24 +1,60 @@
+
+
+/********************************************************************/
+/******************CSS STYLE SHEET FOR STAYINDOORS.GITHUB.IO********/
+/******************************************************************/
+
+/****************************************************************************************************/
+
+
+/*******************/
+/*background color*/
+/*****************/
+
+html {
+	background-color:black;
+}
+
+/*********/
+/*Header*/
+/*******/
+
+
 div.header {
-	height: 100px;
+	height: 20vh
 	width: 100%;
+	max-width: 1000px;
+	margin: auto;
 	color: red;
 	background-color: black;
-	background-image: https://blanchs.com.au/wp-content/uploads/2017/12/sample-header.jpg;
-		
+	background-clip:linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+ 
+	background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2017/auniverseof2.jpg");
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));		
+	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
 }
 div.header>h1 {
-	font-size:50px;
-	padding: 20px;
+	font-size:10vh;
+	padding: 5vh;
 	margin: 0;
+	mask-image:disabled;
+	text-align:center;
 }
+
+/**********/
+/*Toolbar*/
+/********/
 
 table.toolbar {
 	display:block
 	height:7%;
+	max-width:1000px;
+	margin:auto;
 	position:sticky;
 	top:0;
 	width:100%;
 	border-collapse:collapse;
+	z-index:100;
 }
 
 div.toolbarbutton {
@@ -40,7 +76,10 @@ table.toolbar>tbody>tr>td {
 	border:red 5px solid;
 	padding:0px;
 }
-/* The hero image */
+
+/********************************/
+/* The hero image (deprecated) */
+/******************************/
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
@@ -66,16 +105,39 @@ table.toolbar>tbody>tr>td {
   color: white;
 }
 
+/*********************/
+/*Formatting Content*/
+/*******************/
 
+p.content {
+	font-size: 3vh;
+	font-style: normal;
+	line-height: 1.75;
+	font-color: white;
+	color: white;
+	text-align:justify;
+	margin: 0 5vw 0 5vw;
+}
+div.content-window {
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+}
+
+/********************/
+/*Formatting Images*/
+/******************/
 
 
 /*This class is for images that sit alongside text in content windows.  Each wrap-image img should have its own id to handle size and position, but this class ensures margins and wrapping is consistent and encapsulated.*/
 /*to make an image float to the left or right, simply add the css class. This is just a convenience to speed up html dev.*/
 img.float-left {
 	float:left;
+	margin:40px 40px 40px 0;
 }
 img.float-right {
 	float:right;
+	margin:40px;
 }
 
 /*designate an image a fill-image to make it fit the container it's put in without stretching.*/
