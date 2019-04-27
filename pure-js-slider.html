@@ -1,46 +1,34 @@
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<div class="slider-container">
-  <div class="slider-control left inactive"></div>
-  <div class="slider-control right"></div>
-  <ul class="slider-pagi"></ul>
-  <div class="slider">
-    <div class="slide slide-0 active">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">Stay Indoors Slide 1.</h2>
-          <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">Upcoming events, new photo sets, and more.</p>
-          <a class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-1 ">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">Disrupting Industries</h2>
-          <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">We are a consent oriented collective of transgender creators and performers working together to change the industry</p>
-          <a class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-2">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading" style="font-family: 'Open Sans Condensed', sans-serif;">Featured Artist: MXDVSA</h2>
-          <p class="slide__text-desc" style="font-family: 'Open Sans Condensed', sans-serif;">Thousands of years old demi-god whose obsession is torture and gore</p>
-          <a class="slide__text-link" style="font-family: 'Open Sans Condensed', sans-serif;">Learn More</a>
-        </div>
-    </div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
   </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
