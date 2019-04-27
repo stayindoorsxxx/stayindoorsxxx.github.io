@@ -3,10 +3,13 @@ div.header {
 	width: 100%;
 	color: red;
 	background-color: black;
+	background-image: https://blanchs.com.au/wp-content/uploads/2017/12/sample-header.jpg;
 		
 }
 div.header>h1 {
-	font-size:75p;
+	font-size:50px;
+	padding: 20px;
+	margin: 0;
 }
 
 table.toolbar {
