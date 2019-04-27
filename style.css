@@ -18,24 +18,27 @@ table.toolbar {
 	position:sticky;
 	top:0;
 	width:100%;
+	border-collapse:collapse;
 }
 
 div.toolbarbutton {
 	display:inline-block;
-	color: white;
+	color: red;
 	width:100%;	
-	text-align:center	
+	text-align:center;	
+	font-size:150%;
+	padding:10px 0 10px 0;
 }
 table.toolbar>tbody>tr>td>a {
 	display:inline-block;
 	width:100%;
 	height:7%;	
 	background-color:black;
-	border-color:red;
-	border-width:0;
 }
 table.toolbar>tbody>tr>td {
 	width:20%;
+	border:red 5px solid;
+	padding:0px;
 }
 /* The hero image */
 .hero-image {
