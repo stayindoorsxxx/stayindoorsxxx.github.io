@@ -2,16 +2,20 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 
-/*hero slider*/
+<!--hero slideshow--!>
 <link rel="stylesheet" href="pure-js-slider.css">
 <script type="text/javascript" src="slider.js"></script>
 </head>
-
+<script>
+   $(function(){
+    $("#hero").load("pure-js-slider.html");
+   });
+</script>
 
 <div class="header" >
-	<img src="todo" class="contain-image" alt="logo background image">
-		<h1 class="log">Stay Indoors</h1>  
-	</img>
+	<img src="todo" class="contain-image" alt="logo background image"/>
+		<h1 class="logo">Stay Indoors</h1>  
+	
 </div>
 <table class="toolbar">
 	<tr>
@@ -56,11 +60,6 @@
 
 
 
-<script>
-   $(function(){
-    $("#hero").load("pure-js-slider.html");
-   });
-</script>
 
 <div id="hero"></div>
 
