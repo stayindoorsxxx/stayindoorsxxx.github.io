@@ -10,79 +10,52 @@
    $(function(){
     $("#hero").load("pure-js-slider.html");
    });
+   $(function(){
+	  $("#header").load("header.html");
+   }); 
+   $(function(){
+	   $("#toolbar").load("toolbar.html");
+   });
 </script>
 
-<div class="header" >
-		<h1 class="logo">Stay Indoors</h1>  
-	
-</div>
-<table class="toolbar">
-	<tr>
-	<td>
-	<a id="button1" href="http://stayindoorsxxx.github.io">
-		<div class="toolbarbutton">
-		Home
-		</div>
-	</a>
-	</td>
-	<td>	
-	<a id="button2" href="http://chaturbate.com/stayindoors">
-		<div class="toolbarbutton">
-		Live
-		</div>
-	</a>
-	</td>
-	<td>	
+<!--Header and toolbar, imported from header.html and toolbar.html--!>
+<div id="header"></div>
+<div id="toolbar"></div>
 
-	<a id=button3" href="/cast">
-		<div class="toolbarbutton">
-		Cast/Crew
-		</div>
-	</a>
-	</td>
-	<td>	
-	<a id="button4" href="/free">
-		<div class="toolbarbutton">
-		Free
-		</div>
-	</a>
-	</td>
-	<td>
-	<a id="button5" href="http://depop.com/stayindoors">
-		<div class="toolbarbutton">
-		Shop
-		</div>
-	</a>
-	</td>
-	</tr>
-</table>
-
-
-
-
+<!--Hero imported from pure-js-slider.html --!>
 <div id="hero"></div>
 
-
-<!--old hero code, no longer needed
-<div class="hero-image">
-  <div class="hero-window">
-    <h1 clas="hero-header">Hero header</h1>
-    <p class="hero-content">Hero content</p>
-    <button class="hero-left">Left</button>
-    <button class="hero-right">Right</button>
-  </div>
-</div>
---!>
-
-
-
-<!--		CONTENT --!>
+<!------------------CONTENT-------------------------------!>
 <!--
-	enclose articles and other content in a div with class content-window.  The main content should be
-	a p of class "content", and headers are class "content-header"
+	enclose articles and other content in a div with class content-window.  
+	The main content should be a p of class "content", and 
+	headers are class "content-header"
 --!>
 <div class="content-window">
+
+	<!--EVENTS--!>
+
+		<hr class="content-line"/>	
 		<h1 class="content-header">Upcoming Events</h1>
+		<hr class="content-line"/>
+		<!--Embedded Google Calendar--!>
+		<div id="calendar">
+			<div id="event-banners">
+				<a class="event-banner" href="todo"><img src="http://www.crlfacades.co.uk/images/facadefinishes/brownbrick400x100.jpg" alt="event banner1" ></a>
+				<a class="event-banner" href="todo"><img src="https://www.nimbix.net/wp-content/uploads/2018/06/400x100.png" alt="event banner1" ></a>
+				<a class="event-banner" href="todo"><img src="https://showit.co/wp-content/uploads/2017/03/Showit-Logo-White-1600.jpg" alt="event banner1"></a>
+				<a class="event-banner" href="todo"><img src=""https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector alt="event banner1"></a>
+			</div>
+				<iframe class="float-right" src="https://calendar.google.com/calendar/b/1/embed?title=Weekly%20Schedule&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=stayindoorsxxx%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border:solid 1px #777; margin:0; " width="500" height="400" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+	<!--MAIN ARTICLE--!>
+		<hr class="content-line"/>	
+		<h1 class="content-header">Main Article</h1>
+		<hr class="content-line"/>
+	
+
+	
 		<p class="content">
 			<img id="content-pic-1" class="float-left"src="https://www.fujifilmusa.com/products/digital_cameras/x/fujifilm_x20/sample_images/img/index/ff_x20_008.JPG" width=40% alt="First content pic">
 	
